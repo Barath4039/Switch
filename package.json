@@ -12,7 +12,7 @@
     "start": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "prebuild": "rmdir /s /q dist"
+    "prebuild": "rm -rf dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
