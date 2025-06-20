@@ -3,9 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-
- 
-   "scripts": {
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
@@ -13,7 +11,8 @@
     "preview": "vite preview",
     "start": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prebuild": "rmdir /s /q dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
